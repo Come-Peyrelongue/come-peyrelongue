@@ -16,6 +16,7 @@ h1 {
   min-height: 100vh;
   overflow: hidden;
   flex-wrap: wrap;
+  border: 2px white solid;
 }
 
 .pulse {
