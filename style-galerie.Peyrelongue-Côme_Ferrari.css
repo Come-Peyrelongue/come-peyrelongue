@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'ferrari';
+    src: url('ferro-rosso.ttf');
+}
+
+@font-face {
+    font-family: 'cafe';
+    src: url('Louis George Cafe.ttf');
+}
+
+.loader {
+position : fixed;
+z-index: 9999;
+background-color: black;
+top : 0px;
+left : 0px;
+height : 100%;
+width : 100%;
+cursor : wait;
+}
+
+.loader iframe {
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+header {
+  text-align: center;
+}
+
+#menu {
+  padding: 0; margin: 13px;
+}
+
+#menu li {
+  display: inline;
+  list-style: none;
+}
+
+#menu a {
+  display:inline-block;
+  margin: 0 23px;
+  text-align: center;
+}
+
+#menu img {
+   vertical-align: middle;
+}
+
+body {
+  background-color: #c4151c;
+}
+
+a {
+  font-family: cafe;
+  font-size: 1.3rem;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+ 
+a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  font-color: black;
+  background: black;
+  transition: width 500ms ease;
+}
+ 
+a:hover:after {
+  width: 100%;
+}
+
+.grille {
+  max-width: 1300px;
+  width: 95%;
+  height: auto;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  grid-gap: 30px;
+  margin-top: 5%;
+}
+
+.grid-item {
+  width: auto;
+  height: auto;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item img{
+  width: 250px;
+  transition: transform .1s;
+}
+
+.grid-item:hover img{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}

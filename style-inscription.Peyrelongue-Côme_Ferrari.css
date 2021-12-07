@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'ferrari';
+    src: url('ferro-rosso.ttf');
+}
+@font-face {
+    font-family: 'cafe';
+    src: url('Louis George Cafe.ttf');
+}
+@font-face {
+    font-family: 'cafe bold';
+    src: url('Louis George Cafe Bold.ttf');
+}
+@font-face {
+    font-family: 'cafe light';
+    src: url('Louis George Cafe Light Italic.ttf');
+}
+
+.loader {
+position : fixed;
+z-index: 9999;
+background-color: black;
+top : 0px;
+left : 0px;
+height : 100%;
+width : 100%;
+cursor : wait;
+}
+
+.loader iframe {
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+header {
+  text-align: center;
+}
+
+#menu {
+  padding: 0; margin: 13px;
+}
+
+#menu li {
+  display: inline;
+  list-style: none;
+}
+
+#menu a {
+  display:inline-block;
+  margin: 0 23px;
+  text-align: center;
+}
+
+#menu img {
+  vertical-align: middle;
+}
+
+body {
+  background-color: white;
+  text-align: center;
+}
+
+.titre h1 {
+  font-family: cafe bold;
+  font-size: 4rem;
+  color: #c4151c;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  width: 6em
+  vertical-align: top;
+}
+
+.sous-titre h2 {
+  font-family: cafe light;
+  font-size: 1.5rem;
+  color: #01061d;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+a {
+  font-family: cafe;
+  font-size: 1.3rem;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0;
+  text-align: center;
+}
+ 
+a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  font-color: black;
+  background: #c4151c;
+  transition: width 500ms ease;
+}
+ 
+a:hover:after {
+  width: 100%;
+}
+
+form {
+  height: auto;
+  width: auto;
+}
+
+label {
+  font-family: cafe;
+  color: #01061d;
+}
+
+input {
+  font-family: cafe;
+  width: 400px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+} 
+
+.champs p {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: left;
+}
+
+.champs input {
+  width: 100%;
+}
+
+fieldset {
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 1px dashed #c4151c;
+}
+
+legend {
+  font-family: cafe bold;
+  color: black;
+}
+
+#submit {
+  background-color: white;
+}
+#submit:hover {
+  background-color: #01061d;
+  color: white;
+}
+
+.trait {
+  color: #c4151c;
+  font-size: 1.2em;
+}
+
+textarea {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  background-color: ;
+  color: grey;
+  font-family: cafe;
+  resize: none;
+  border: 0px;
+}
