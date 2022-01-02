@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'ferrari';
+    src: url('ferro-rosso.ttf');
+}
+@font-face {
+    font-family: 'cafe';
+    src: url('Louis George Cafe.ttf');
+}
+@font-face {
+    font-family: 'cafe bold';
+    src: url('Louis George Cafe Bold.ttf');
+}
+@font-face {
+    font-family: 'cafe light';
+    src: url('Louis George Cafe Light Italic.ttf');
+}
+
+.loader {
+position : fixed;
+z-index: 9999;
+background-color: black;
+top : 0px;
+left : 0px;
+height : 100%;
+width : 100%;
+cursor : wait;
+}
+
+.loader iframe {
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+header {
+  position: fixed;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 13%;
+  box-shadow: 0px 5px 75px;
+}
+
+.anim-nav{
+  background: black;
+  color: white;
+}
+
+#menu {
+  padding: 0; margin: 13px;
+}
+#menu li {
+  display: inline;
+  list-style: none;
+}
+#menu a {
+  display:inline-block;
+  margin: 0 23px;
+  text-align: center;
+}
+#menu img {
+  vertical-align: middle;
+}
+
+header a {
+  font-family: cafe;
+  font-size: 1.4rem;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0;
+  text-align: center;
+}
+ 
+header a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  font-color: black;
+  background: red;
+  transition: width 500ms ease;
+}
+ 
+header a:hover:after {
+  width: 100%;
+}
+
+body {
+  background-color: white;
+  text-align: center;
+}
+
+.titre h1 {
+  font-family: cafe bold;
+  font-size: 4rem;
+  color: #c4151c;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  width: 6em
+  vertical-align: top;
+}
+
+.sous-titre h2 {
+  font-family: cafe light;
+  font-size: 1.5rem;
+  color: #01061d;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+a {
+  font-family: cafe;
+  font-size: 1.4rem;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0;
+  text-align: center;
+}
+ 
+a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  font-color: black;
+  background: #c4151c;
+  transition: width 500ms ease;
+}
+ 
+a:hover:after {
+  width: 100%;
+}
+
+form {
+  height: auto;
+  width: auto;
+}
+
+label {
+  font-family: cafe;
+  color: #01061d;
+}
+
+input {
+  font-family: cafe;
+  width: 400px;
+  border: 1px solid black;
+  background:rgba( 255, 255, 255, .1);
+  border-radius: 5px;
+} 
+
+.champs p {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: left;
+}
+
+.point fieldset {
+  border: 0px;
+  text-align: left;
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+legend {
+  font-family: cafe;
+  font-size: 1.5rem;
+  color: #01061d;
+}
+
+.point input {
+  width: 20px;
+}
+
+.point p {
+  margin-bottom: 0px;
+}
+
+input[type='radio']{
+  background-color: none; 
+}
+
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  right: -3px;
+  border-radius: 500px;
+  position: relative;
+  background-color: #c4151c;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  transition: all 250ms;
+} 
+
+input[type=submit] {
+  width: 30em;  
+  height: 3em;
+  font-size: 100%;
+}
+
+#submit {
+  background-color: #01061d;
+  color: white;
+}
+
+#submit:hover {
+  background-color: white;
+  color: #01061d;
+  transition: all 250ms;
+}
+
+.trait {
+  color: #c4151c;
+  font-size: 1.2em;
+}
+
+.textarea fieldset{
+  border: 0px;
+}
+
+textarea {
+  width: 600px;
+  height: 100px;
+  backdrop-filter: blur 20px;
+  box-shadow: 10px 10px 70px black;
+  color: grey;
+  font-family: cafe;
+  resize: none;
+  border: 1px solid black;
+  border-radius: 20px;
+}
