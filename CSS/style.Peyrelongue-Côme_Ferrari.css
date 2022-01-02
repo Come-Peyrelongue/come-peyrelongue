@@ -49,7 +49,7 @@ body {
   min-height: 90vh;
   font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   background-color: black;
-  background-image: url(come-peyrelongue/Images/superfast.jpg);
+  background-image: url("come-peyrelongue/Images/superfast.jpg");
   background-position: center;
   background-size: 100%;
   background-attachment: fixed;
