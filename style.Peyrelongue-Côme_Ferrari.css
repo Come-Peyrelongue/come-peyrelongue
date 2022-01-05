@@ -102,3 +102,9 @@ a:hover:after {
 .sous-titre {
   text-align: center;
 }
+
+@media screen and (max-width: 1280px) {
+  body {
+    background-color: black;
+  }
+}
