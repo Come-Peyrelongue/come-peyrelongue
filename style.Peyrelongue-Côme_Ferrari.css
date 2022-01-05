@@ -103,7 +103,7 @@ a:hover:after {
   text-align: center;
 }
 
-@media screen and (max-width: 1280px) {
+@media handheld and (max-width: 10240px) {
   body {
     background-color: black;
   }
