@@ -172,7 +172,7 @@ form{
 	margin-top: 35px;
 }
 
-@media (orientation:portait) {
+@media (orientation: portrait) {
 	body{
 		background-color: blue;
 	}
