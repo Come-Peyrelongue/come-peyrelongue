@@ -172,7 +172,7 @@ form{
 	margin-top: 35px;
 }
 
-@media only screen and (max-width: 600px) {
+@media (orientation:portait) {
 	body{
 		background-color: blue;
 	}
