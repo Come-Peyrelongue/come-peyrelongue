@@ -174,8 +174,12 @@ form{
 
 @media (orientation: portrait) {
 	body{
-		background-color: blue;
+		background-color: white;
+		background-image: none;
+		font-family: Bold-titre;
+		margin: 5px 5% 0px 5%;
 	}
+	
 
 }
 
