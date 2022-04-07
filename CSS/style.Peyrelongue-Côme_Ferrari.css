@@ -109,7 +109,7 @@ a:hover:after { /*animations css de soulignement des liens*/
 
 }
 
-@media handheld {
+@media screen and (max_width : 1200px) {
   body {
     background-size: auto 100%;
   }
